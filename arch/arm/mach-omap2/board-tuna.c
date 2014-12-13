@@ -1007,6 +1007,8 @@ static inline void __init board_serial_init(void)
 	omap_serial_init_port_pads(0, uart1_pads, uart1_pads_sz, NULL);
 	omap_serial_init_port_pads(1, tuna_uart2_pads,
 		ARRAY_SIZE(tuna_uart2_pads), &tuna_uart2_info);
+	omap_serial_init_port_pads(2,tuna_uart3_pads,
+		ARRAY_SIZE(tuna_uart3_pads), NULL);
 	omap_serial_init_port_pads(3, tuna_uart4_pads,
 				   ARRAY_SIZE(tuna_uart4_pads), NULL);
 }
